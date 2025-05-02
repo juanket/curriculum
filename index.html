@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Currículum Vitae de Juan Carlos Escobar, un desarrollador con experiencia en C++, PHP, HTML y bases de datos.">
+        <meta name="author" content="Juan Carlos Escobar">
+        <meta name="keywords" content="Desarrollador, Programador, CV, C++, PHP, HTML, bases de datos, Visual Studio Code">
+       
+        <title>Currículum Vitae – Juan Carlos Escobar</title>
+       
+        <!-- Favicon -->
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+       
+        <!-- Google Fonts para tipografía moderna -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+       
+        <!-- Estilos principales -->
+        <link rel="stylesheet" href="style.css">
+       
+        <!-- Animaciones opcionales -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+       
+    </head>
+   
+   
+<body>
+    <div class="contenedor">
+        <header>
+            <h1>📄 Currículum Vitae</h1>
+            <h2>Juan Carlos Escobar Tasamá</h2>
+        </header>
+        <section class="navegacion">
+            <button class="nav-btn" data-seccion="info-contacto" onclick="mostrarSeccion('info-contacto')">📞 Información de contacto</button>
+            <button class="nav-btn" data-seccion="perfil" onclick="mostrarSeccion('perfil')">🧭 Perfil Profesional</button>
+            <button class="nav-btn" data-seccion="habilidades" onclick="mostrarSeccion('habilidades')">🧰 Habilidades Clave</button>
+            <button class="nav-btn" data-seccion="experiencia" onclick="mostrarSeccion('experiencia')">💼 Experiencia Académica</button>
+            <button class="nav-btn" data-seccion="educacion" onclick="mostrarSeccion('educacion')">🎓 Educación</button>
+            <button class="nav-btn" data-seccion="cursos" onclick="mostrarSeccion('cursos')">📚 Cursos Relevantes</button>
+            <button class="nav-btn" data-seccion="idiomas" onclick="mostrarSeccion('idiomas')">🌍 Idiomas</button>
+        </section>
+       
+        <main>
+            <section id="info-contacto" class="seccion">
+                <h3>📞 Información de Contacto</h3>
+                <p><i class="fas fa-phone"></i> +56 987514256</p>
+                <p><i class="fas fa-envelope"></i> jescobar@utem.cl</p>
+                <p><i class="fas fa-map-marker-alt"></i> Maipú, Región Metropolitana, Chile</p>
+                <p><i class="fab fa-github"></i> <a href="#">GitHub</a></p>
+
+
+
+
+            </section>
+            <section id="perfil" class="seccion">
+                <h3>🧭 Perfil Profesional</h3>
+                <p>
+                  Soy estudiante de Ingeniería en Informática con sólida formación en:
+                </p>
+                <ul>
+                  <li>📐 Matemáticas avanzadas</li>
+                  <li>⚙️ Física aplicada</li>
+                  <li>💻 Programación estructurada y orientada a objetos</li>
+                </ul>
+             
+                <p>
+                  Cuento con <strong>3 años de experiencia</strong> en proyectos académicos donde he ocupado <strong>puestos clave</strong> en equipos pequeños, aplicando lógica y diseño de software para resolver problemas reales.
+                </p>
+             
+                <p>
+                  Me caracterizo por:
+                </p>
+                <ul>
+                  <li>🧠 Iniciativa y pensamiento analítico</li>
+                  <li>🤝 Colaboración efectiva en equipo</li>
+                  <li>🚀 Pasión por la innovación tecnológica</li>
+                </ul>
+              </section>
+             
+              <section id="habilidades" class="seccion">
+                <h3>🧰 Habilidades Clave</h3>
+           
+                <div class="habilidades">
+                    <div class="habilidades-tecnicas">
+                        <h4 class="titulo-habilidades">Habilidades Técnicas</h4>
+                        <ul>
+                            <li><strong>Lenguajes de Programación:</strong> C, C++, conocimientos a nivel amateur en Python, PHP y HTML.</li>
+                            <li><strong>Bases de Datos:</strong> Manejo de MySQL.</li>
+                            <li><strong>Herramientas de Desarrollo:</strong> Visual Studio Code.</li>
+                            <li><strong>Áreas de Conocimiento:</strong> Física y matemáticas aplicadas.</li>
+                            <li><strong>Gestión y Desarrollo de Proyectos:</strong> Experiencia en proyectos académicos.</li>
+                        </ul>
+                    </div>
+           
+                    <div class="habilidades-blandas">
+                        <h4 class="titulo-habilidades">Habilidades Blandas</h4>
+                        <ul>
+                            <li><strong>Resolución de Problemas:</strong> Capacidad para abordar y resolver problemas complejos de forma eficiente.</li>
+                            <li><strong>Pensamiento Lógico y Analítico:</strong> Enfoque estructurado para el análisis y solución de problemas.</li>
+                            <li><strong>Organización y Gestión del Tiempo:</strong> Habilidad para gestionar tareas y plazos de manera eficaz.</li>
+                            <li><strong>Trabajo en Equipo:</strong> Colaboración efectiva en equipos multidisciplinarios.</li>
+                            <li><strong>Adaptabilidad y Aprendizaje Autónomo:</strong> Capacidad de adaptarse a nuevas tecnologías y aprender de manera independiente.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+           
+           
+             
+              <section id="experiencia" class="seccion">
+                <h3>💼 Experiencia Académica Destacada</h3>
+           
+                <!-- Botones para alternar entre proyectos -->
+                <div class="proyectos-experiencia">
+                    <button class="proyecto-btn activo" data-proyecto="pecedex" onclick="mostrarProyecto('pecedex')">🐟 Pecedex</button>
+                    <button class="proyecto-btn" data-proyecto="clinica" onclick="mostrarProyecto('clinica')">🏥 Clínica Médica</button>
+                    <button class="proyecto-btn" data-proyecto="metro" onclick="mostrarProyecto('metro')">🚇 Metro Santiago</button>
+                    <button class="proyecto-btn" data-proyecto="liquifacil" onclick="mostrarProyecto('liquifacil')">💰 Liquifacil</button>
+                </div>
+           
+                <!-- Proyectos -->
+                <div id="pecedex" class="experiencia-proyecto mostrar">
+                    <strong>Investigador y Coordinador de Proyecto – “Pecedex”, UTEM</strong><br>
+                    📍 San Antonio, Chile | 📅 Mar 2023 – Jul 2023
+                    <ul>
+                        <li>Investigación de campo y entrevistas con pescadores locales.</li>
+                        <li>Redacción de informes y propuestas para aplicación web.</li>
+                        <li>Coordinación de equipo y distribución de tareas.</li>
+                    </ul>
+                </div>
+           
+                <div id="clinica" class="experiencia-proyecto">
+                    <strong>Líder y Programador – Proyecto Base de Datos Clínica Médica, UTEM</strong><br>
+                    📍 Santiago, Chile | 📅 Mar 2024 – Jul 2024
+                    <ul>
+                        <li>Programación en MQL y diseño E-R.</li>
+                        <li>Coordinación general del proyecto.</li>
+                        <li>Normalización de tablas y análisis de relaciones.</li>
+                    </ul>
+                </div>
+           
+                <div id="metro" class="experiencia-proyecto">
+                    <strong>Investigador y Presentador – Optimización de Rutas en el Metro de Santiago, UTEM</strong><br>
+                    📍 Santiago, Chile | 📅 Ago 2024 – Dic 2024
+                    <ul>
+                        <li>Desarrollo de algoritmo de rutas óptimas con grafos en Python.</li>
+                        <li>Investigación y recopilación de datos.</li>
+                        <li>Presentación final y explicación técnica del sistema.</li>
+                    </ul>
+                </div>
+           
+                <div id="liquifacil" class="experiencia-proyecto">
+                    <strong>Investigador y Analista de Datos – Proyecto “Liquifacil”, UTEM</strong><br>
+                    📍 Santiago, Chile | 📅 Ago 2024 – Dic 2024
+                    <ul>
+                        <li>Investigación normativa y técnica.</li>
+                        <li>Diseño de estructura de tablas y lógica de cálculo.</li>
+                        <li>Desarrollo de versión funcional del sistema con PHP y MySQL.</li>
+                    </ul>
+                </div>
+            </section>
+           
+            <section id="educacion" class="seccion">
+                <h3>🎓 Educación</h3>
+             
+                <p><strong>Ingeniería en Informática</strong> – <em>Universidad Tecnológica Metropolitana (UTEM)</em></p>
+                <p>📍 Santiago, Chile | 📅 En curso (Inicio: 2023)</p>
+                <p>Formación en estructuras de datos, algoritmos, bases de datos y desarrollo de software.</p>
+       
+                <h4>Proyectos destacados:</h4>
+                <ul>
+                  <li><strong>Pecedex</strong> – Solución tecnológica para pesca artesanal.</li>
+                  <li><strong>Clínica Médica</strong> – Diseño de base de datos funcional.</li>
+                  <li><strong>Metro Santiago</strong> – Algoritmos de grafos en Python.</li>
+                  <li><strong>Liquifacil</strong> – Software de liquidación de sueldos en PHP.</li>
+                </ul>
+              </section>
+             
+              <section id="cursos" class="seccion">
+                <h3>📚 Cursos Académicos Relevantes – UTEM</h3>
+                <ul class="lista-cursos">
+                    <li>🧮 Algoritmos y Programación</li>
+                    <li>🗂️ Estructuras de Datos</li>
+                    <li>💻 Lenguajes de Programación</li>
+                    <li>🗃️ Bases de Datos</li>
+                    <li>🔤 Grafos y Lenguajes Formales</li>
+                    <li>🏛️ Arquitectura de Computadores</li>
+                    <li>📊 Estadística y Probabilidad</li>
+                    <li>🎨 Design Thinking</li>
+                    <li>📂 Sistemas de Información</li>
+                    <li>📈 Cálculo Diferencial</li>
+                    <li>📉 Cálculo Integral</li>
+                    <li>⚙️ Mecánica Clásica</li>
+                    <li>🔌 Electromagnetismo</li>
+                </ul>
+            </section>
+           
+             
+
+
+
+
+            <section id="idiomas" class="seccion">
+                <h3>🌍 Idiomas</h3>
+                <p>Español: Nativo</p>
+            </section>
+        </main>
+    </div>
+
+
+    <script>
+        // Mostrar solo la sección seleccionada y marcar el botón activo
+        function mostrarSeccion(id) {
+            const secciones = document.querySelectorAll('.seccion');
+            const botonesNav = document.querySelectorAll('.nav-btn');
+   
+            // ocultar todas las secciones
+            secciones.forEach(seccion => {
+                seccion.style.display = 'none';
+            });
+   
+            // desactivar todos los botones de navegación
+            botonesNav.forEach(btn => {
+                btn.classList.remove('active');
+            });
+   
+            // mostrar la sección seleccionada
+            const seccionMostrar = document.getElementById(id);
+            if (seccionMostrar) {
+                seccionMostrar.style.display = 'block';
+            }
+   
+            // activar el botón correspondiente
+            const botonActivo = document.querySelector(`.nav-btn[data-seccion="${id}"]`);
+            if (botonActivo) {
+                botonActivo.classList.add('active');
+            }
+        }
+   
+        // Mostrar solo un proyecto y marcar el botón correspondiente
+        function mostrarProyecto(id) {
+            const proyectos = document.querySelectorAll('.experiencia-proyecto');
+            const botonesProyecto = document.querySelectorAll('.proyecto-btn');
+   
+            // ocultar todos los proyectos
+            proyectos.forEach(proy => {
+                proy.classList.remove('mostrar');
+            });
+   
+            // desactivar todos los botones
+            botonesProyecto.forEach(btn => {
+                btn.classList.remove('activo');
+            });
+   
+            // mostrar proyecto actual y activar su botón
+            const proyectoMostrar = document.getElementById(id);
+            if (proyectoMostrar) {
+                proyectoMostrar.classList.add('mostrar');
+            }
+   
+            const botonActivo = document.querySelector(`.proyecto-btn[data-proyecto="${id}"]`);
+            if (botonActivo) {
+                botonActivo.classList.add('activo');
+            }
+        }
+   
+        // Mostrar sección y proyecto por defecto al cargar
+        window.addEventListener('DOMContentLoaded', () => {
+            mostrarSeccion('info-contacto');
+            mostrarProyecto('pecedex');
+        });
+    </script>
+</body>
+</html>

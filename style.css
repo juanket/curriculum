@@ -1,0 +1,256 @@
+/* General */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    transform: scale(1); /* Mantiene el zoom por defecto */
+    transform-origin: top center; /* Hace que el contenido se escale desde el centro superior */
+}
+
+
+.contenedor {
+    max-width: 950px; /* Aumento el ancho máximo */
+    margin: auto;
+    padding: 25px;
+    transform: scale(0.85); /* Reduce el zoom al 85% */
+    transform-origin: top center; /* Asegura que la escala ocurra desde el centro superior */
+}
+
+
+/* Encabezado */
+header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+
+header h1 {
+    font-size: 4.5rem;
+    margin: 25px 0 15px;
+    color: #4CAF50;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+
+header h1:hover {
+    color: #fff;
+    transform: scale(1.07);
+}
+
+
+header h2 {
+    font-size: 1.8rem;
+    margin: 12px 0 0;
+    font-weight: normal;
+    color: #bbb;
+    letter-spacing: 2px;
+}
+
+
+/* Navegación */
+.navegacion {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+
+.nav-btn {
+    background-color: #333;
+    border: 1px solid #4CAF50;
+    color: #fff;
+    padding: 14px 22px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.nav-btn:hover {
+    background-color: #4CAF50;
+    transform: scale(1.05);
+}
+
+
+.nav-btn.active {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+
+/* Secciones */
+main {
+    padding: 25px;
+    border-top: 1px solid #4CAF50;
+}
+
+
+.seccion {
+    display: none;
+    animation: aparecer 0.5s ease forwards;
+    margin-bottom: 35px;
+}
+
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Listas */
+ul {
+    padding-left: 18px;
+}
+
+
+ul li {
+    list-style-type: disc;
+    font-size: 1.1rem;
+}
+
+
+/* Enlaces */
+a {
+    color: #4CAF50;
+    text-decoration: underline;
+}
+
+
+a:hover {
+    color: #fff;
+}
+
+
+/* Títulos */
+h3 {
+    color: #4CAF50;
+    font-size: 1.9rem;
+    margin-bottom: 25px;
+}
+
+
+/* Estilos para los íconos */
+.fas, .fab {
+    margin-right: 8px;
+}
+
+
+/* Botones de Proyecto */
+.proyecto-btn {
+    background-color: #1e1e1e;
+    border: 1px solid #4CAF50;
+    color: #fff;
+    padding: 14px 22px;
+    margin: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.proyecto-btn:hover {
+    background-color: #4CAF50;
+    transform: scale(1.05);
+}
+
+
+.proyecto-btn.activo {
+    background-color: #4CAF50;
+    color: #121212;
+}
+
+
+/* Proyectos de Experiencia */
+.experiencia-proyecto {
+    display: none;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    margin-top: 25px;
+}
+
+
+.experiencia-proyecto.mostrar {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
+/* Cursos Relevantes */
+.lista-cursos {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 18px;
+    margin-top: 20px;
+}
+
+
+.lista-cursos li {
+    background-color: #1e1e1e;
+    border: 1px solid #4CAF50;
+    padding: 14px 22px;
+    border-radius: 6px;
+    transition: transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.lista-cursos li:hover {
+    transform: scale(1.05);
+}
+
+
+/* Habilidades Clave */
+.habilidades {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+
+.habilidades-tecnicas, .habilidades-blandas {
+    flex: 1;
+}
+
+
+.habilidades h4 {
+    color: #4CAF50;
+    font-size: 1.4rem;
+    margin-bottom: 18px;
+    font-weight: bold;
+}
+
+
+.habilidades ul {
+    padding-left: 18px;
+}
+
+
+.habilidades li {
+    list-style-type: disc;
+    margin-bottom: 12px;
+}

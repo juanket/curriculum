@@ -254,3 +254,46 @@ h3 {
     list-style-type: disc;
     margin-bottom: 12px;
 }
+
+
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+    .contenedor {
+        padding: 15px;
+        transform: scale(1); /* Quita el zoom para móviles */
+    }
+
+    header h1 {
+        font-size: 2.8rem;
+        letter-spacing: 2px;
+    }
+
+    header h2 {
+        font-size: 1.2rem;
+    }
+
+    .navegacion {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-btn {
+        width: 100%;
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .proyecto-btn {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .habilidades {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .lista-cursos {
+        grid-template-columns: 1fr;
+    }
+}
